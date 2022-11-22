@@ -1,0 +1,52 @@
+%------------目次深さ-----------
+\setcounter{tocdepth}{2}
+
+%------------名称変更------------
+\renewcommand{\figurename}{Fig.~}
+\renewcommand{\tablename}{Table~}
+\renewcommand{\bibname}{参考文献}
+
+\newcommand{\figref}[1]{\figurename\ref{#1}}
+\newcommand{\tabref}[1]{\tablename\ref{#1}}
+\newcommand{\eqnref}[1]{Eq.~(\ref{#1})}
+
+\newcommand{\chapref}[1]{第\ref{#1}章}
+\newcommand{\secref}[1]{\ref{#1}節}
+% \newcommand{\subref}[1]{\ref{#1}}
+
+\def\thesis#1{
+	\gdef\@thesis{#1}
+}
+\def\teacher#1{
+	\gdef\@teacher{#1}
+}
+\def\organization#1{
+	\gdef\@organization{#1}
+}
+
+\renewcommand{\maketitle}{%
+	\thispagestyle{empty}
+	\begin{center}
+	  \vspace*{2cm}
+	  \LARGE \@thesis \hspace*{\fill}\\
+	  \vspace{2cm}
+	  \LARGE
+	  {\bf \@title} \hspace*{\fill}\\
+	  \label{front_title}
+	  \Large
+	  \vspace{5cm}
+	  \@date \hspace*{0.5zw}提出 \hspace*{\fill}\\
+	  \vspace{1cm}
+	  指導教員 \hspace*{0.5zw}\@teacher \hspace*{\fill}\\
+	  \vspace{1cm}
+	  \Large
+	  \@organization \hspace*{\fill}\\
+	  \LARGE
+	  \@author \hspace*{\fill}\\
+	  \normalsize
+	\end{center}
+	\clearpage
+	\mbox{}
+	\thispagestyle{empty}
+	\clearpage
+}

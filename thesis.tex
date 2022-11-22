@@ -1,0 +1,52 @@
+\documentclass[uplatex, a4paper, 12pt, openany, oneside]{jsbook}
+
+\usepackage[dvipdfmx]{graphicx}
+\usepackage[dvipdfmx]{color}
+\usepackage[dvipdfmx, bookmarks=true, setpagesize=false]{hyperref}
+\usepackage{pxjahyper}
+
+\usepackage{thesis}
+\usepackage{here}
+\usepackage{url}
+
+
+\thesis{修 士 論 文}
+\title{
+  \centering
+    \scalebox{1.0}{タイトル}\\
+    \vspace{-0.3zh}
+    \scalebox{0.7}{title}
+    \vspace{-0.6zh}
+}
+\setlength{\textwidth}{\fullwidth}
+\setlength{\evensidemargin}{\oddsidemargin}
+
+\date{\today}
+\vspace{-15.0zh}
+\teacher{林原 靖男 教授}
+\vspace{-15.0zh}
+\organization{千葉工業大学 先進工学部 未来ロボティクス学科}
+\author{学番 名前}
+\vspace{-15zh}
+
+\renewcommand{\baselinestretch}{1.2}
+\begin{document}
+
+%% Front Matter
+\frontmatter{}
+%
+\include{frontmatter/main}
+%
+%% Main Matter
+\mainmatter{}
+%
+\include{introduction/main}
+%ここにディレクトリのパスを追加していく
+%
+%% Back Matter
+\backmatter{}
+%
+\include{backmatter/main}
+%
+
+\end{document}
