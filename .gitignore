@@ -137,5 +137,3 @@ sympy-plots-for-*.tex/
 *.bak
 *.sav
 
-out
-out/*
