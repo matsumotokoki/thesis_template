@@ -7,7 +7,7 @@ VSCode+LaTeXの設定は[こちら](https://qiita.com/rainbartown/items/d7718f12
 
 ## convert_eps.sh 
 
-.png .jpg -> .eps にまとめて変換するスクリプトです.
+.png .jpg -> .eps にまとめて変換するスクリプトです.  
 imageファイルにあるのでご自由にお使いください.
 
 使い方
