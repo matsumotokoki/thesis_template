@@ -6,8 +6,9 @@ VSCode+LaTeXの設定は[こちら](https://qiita.com/rainbartown/items/d7718f12
 
 
 ## convert_eps.sh 
+
 .png .jpg -> .eps にまとめて変換するスクリプトです.
-ご自由にお使いください.
+imageファイルにあるのでご自由にお使いください.
 
 使い方
 ```
@@ -22,7 +23,6 @@ sudo apt-get -y install imagemagick
 # MacOS
 brew install imagemagick
 ```
-
 
 
 ### その他
